@@ -55,7 +55,7 @@ function draw() {
   background(255);
   
   //depure o código abaixo
-  kangaroo.position.x=camera.positionX-270;
+  kangaroo.x=camera.position.x-270;
    
   if (gameState===PLAY){
 
@@ -126,7 +126,8 @@ function spawnShrubs() {
       case 2: shrub.addImage(shrub2);
       break;
       case 3: shrub.addImage(shrub3);
-      default: break;
+      break;
+      default: break; 
     }
     
     //atribuir escala e vida ao arbusto         
